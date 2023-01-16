@@ -106,20 +106,26 @@ $(document).ready(function () {
       .find("a")
       .removeClass("active");
   });
-  //link corresponding to the current sectoion becomes active
-  const links = $("#header .links li a");
-  const sections = $(".article");
+  $(window).scroll(function () {
+    const windowTop = $(this).scrollTop();
+    if (windowTop > 400) {
+      $(".home-content .up-btn").show();
+    } else {
+      $(".home-content .up-btn").hide();
+    }
+  });
 
-  $.each(sections, function (index, sec) {
-    $(window).scroll(function () {
-      const windowTop = $(this).scrollTop();
-      const secTop = $(sec).offset().top;
-      if (windowTop > 200) {
-        $("header").addClass("down");
-      }
-    });
+  //Scroll to Top on click
+  $(".home-content .up-btn button").click(function () {
+    $("body,html").animate(
+      {
+        scrollTop: 0,
+      },
+      50
+    );
   });
 });
+
 /**
  *Function adds active class to the active link
  * @param {number} id

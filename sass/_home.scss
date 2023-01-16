@@ -3,11 +3,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+$upBtn-back: rgb(253, 195, 130);
 #home {
   .home-content {
     position: relative;
     height: 100vh;
     width: 100vw;
+    .up-btn {
+      position: absolute;
+      right: 30px;
+      bottom: 10px;
+      background-color: $upBtn-back;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      z-index: 22222;
+      position: fixed;
+      display: none;
+      button {
+        padding: 20px;
+        font-size: 20px;
+        color: #fff;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+      }
+    }
     .text-content {
       position: absolute;
       display: flex;

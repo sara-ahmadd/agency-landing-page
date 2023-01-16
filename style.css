@@ -9,6 +9,30 @@
   height: 100vh;
   width: 100vw;
 }
+#home .home-content .up-btn {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  background-color: rgb(253, 195, 130);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 22222;
+  position: fixed;
+  display: none;
+}
+#home .home-content .up-btn button {
+  padding: 20px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
 #home .home-content .text-content {
   position: absolute;
   display: flex;
@@ -279,7 +303,7 @@
 @media (max-width: 768px) {
   #reviews .reviews-container {
     width: 100%;
-    height: 60%;
+    height: 80%;
     padding: 10px;
   }
 }
@@ -466,6 +490,7 @@ header nav {
   header nav {
     flex-direction: row;
     flex-wrap: wrap;
+    height: 80px;
     top: 10px;
     left: 50%;
     width: 90%;
