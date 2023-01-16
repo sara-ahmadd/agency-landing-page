@@ -47,7 +47,6 @@ let names = [
   "Helena Micallester",
   "Mark john",
 ];
-//array for titles.
 
 let { rev1, rev2, rev3, rev4 } = reviews;
 
