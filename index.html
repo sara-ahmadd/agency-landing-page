@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Unique Website</title>
+  </head>
+  <body>
+    <header id="header">
+      <nav class="navbar">
+        <ul class="links">
+          <li>
+            <a class="active" href="#home"
+              ><i class="bi bi-house-door-fill"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#about"><i class="bi bi-file-person"></i></a>
+          </li>
+          <li>
+            <a href="#portfolio"><i class="bi bi-person-rolodex"></i></a>
+          </li>
+          <li>
+            <a href="#reviews"><i class="bi bi-emoji-laughing"></i></a>
+          </li>
+          <li>
+            <a href="#contact"><i class="bi bi-envelope-at"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section id="home" class="container article">
+        <div class="home-content">
+          <div class="video">
+            <video src="/video.mp4 " autoplay muted loop></video>
+          </div>
+          <div class="text-content">
+            <div class="home-text">
+              <h1>We Are A Creative Agency!</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perferendis, minima eligendi architecto voluptas nemo sit
+                veritatis harum quas asperiores porro aperiam expedita veniam,
+                vel consequuntur non maiores sed animi neque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="article container">
+        <div class="about-text special-heading">
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo,
+            recusandae?
+          </p>
+        </div>
+        <div class="about-container">
+          <div class="img"><img src="./images/mountain.jpg" alt="image" /></div>
+          <div class="content">
+            <nav>
+              <ul class="tabs">
+                <li id="history" class="active">History</li>
+                <li id="vision">Vision</li>
+                <li id="goals">Goals</li>
+              </ul>
+            </nav>
+            <div class="paragraph">
+              <div id="history" class="active">
+                <h3 class="active">History</h3>
+                <p class="active">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                  quo aliquam, sequi sunt similique provident quas quisquam
+                  exercitationem fugiat hic pariatur vitae alias, voluptate
+                  cumque consectetur, porro aperiam est ducimus!
+                </p>
+              </div>
+              <div id="vision">
+                <h3>Vision</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                  quo aliquam, sequi sunt similique provident quas quisquam
+                  exercitationem fugiat hic pariatur vitae alias, voluptate
+                  cumque consectetur, porro aperiam est ducimus!
+                </p>
+                <ul id="vision-list">
+                  <li>list item</li>
+                  <li>list item</li>
+                  <li>list item</li>
+                </ul>
+              </div>
+              <div id="goals">
+                <h3>Goals</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed
+                  quo aliquam, sequi sunt similique provident quas quisquam
+                  exercitationem fugiat hic pariatur vitae alias, voluptate
+                  cumque consectetur, porro aperiam est ducimus!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="portfolio" class="container article">
+        <div class="portfolio-head special-heading">
+          <h2>Portfolio</h2>
+        </div>
+        <div class="projects">
+          <div><img src="./images/img1.jpg" /></div>
+          <div><img src="./images/img2.png" /></div>
+          <div><img src="./images/img3.png" /></div>
+          <div><img src="./images/img4.png" /></div>
+          <div><img src="./images/img5.png" /></div>
+          <div><img src="./images/img6.png" /></div>
+        </div>
+      </section>
+      <section id="reviews" class="container article">
+        <div class="special-heading">
+          <h2>Reviews</h2>
+        </div>
+        <div class="reviews-container">
+          <div id="img">
+            <img src="/images/review1.jpg" alt="img" />
+          </div>
+          <p id="name">Peter Parker</p>
+          <p id="title">WEB DEVELOPER</p>
+          <div id="review-txt">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+            beatae sapiente aperiam minus autem nisi dicta unde error nostrum
+            recusandae corporis quam quaerat.
+          </div>
+        </div>
+        <div class="arrows">
+          <div id="arr-1"><i class="fa-solid fa-angle-left"></i></div>
+          <div id="arr-2"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+      </section>
+      <section id="contact" class="container article">
+        <div class="special-heading">
+          <h2>Contact Us</h2>
+        </div>
+        <div class="contact-content">
+          <div class="img">
+            <img src="./images/contact.png" />
+          </div>
+          <form>
+            <input type="text" placeholder="Your Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea cols="40" rows="20" placeholder="Your Message"></textarea>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <div class="left-section">
+        <h2>Made By Sara</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam fugiat
+          alias delectus corrupti explicabo cupiditate cum atque, ipsam labore
+          eum aperiam perspiciatis odio illum nulla at, adipisci rem quod
+          molestiae!
+        </p>
+      </div>
+      <div class="right-section">
+        <h2>
+          <span><i class="bi bi-buildings"></i></span> company
+        </h2>
+        <div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
