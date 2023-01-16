@@ -41,7 +41,7 @@
     }
     .content {
       width: 40%;
-      height: 500px;
+      height: 360px;
       border-radius: 10px;
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -51,6 +51,8 @@
       box-shadow: 1px 1px 30px #adaeb0;
       @media (max-width: 768px) {
         width: 100%;
+
+        height: 400px;
       }
       .tabs {
         border-top-right-radius: 10px;
@@ -84,7 +86,7 @@
       }
       .paragraph {
         padding: 20px;
-        padding-top: 20px;
+        padding-top: 40px;
         margin-bottom: 10px;
         color: #000;
         text-align: left;
