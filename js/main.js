@@ -33,9 +33,6 @@ tabs.forEach((tab) => {
   });
 });
 
-// if (document.documentElement.classList.contains("active")) {
-//   document.documentElement.style.display = "block";
-// }
 
 //Review Section
 //array of images.
@@ -47,7 +44,6 @@ let names = [
   "Helena Micallester",
   "Mark john",
 ];
-//array for titles.
 
 let { rev1, rev2, rev3, rev4 } = reviews;
 
