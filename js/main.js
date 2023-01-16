@@ -33,9 +33,6 @@ tabs.forEach((tab) => {
   });
 });
 
-// if (document.documentElement.classList.contains("active")) {
-//   document.documentElement.style.display = "block";
-// }
 
 //Review Section
 //array of images.
