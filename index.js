@@ -1,23 +1,29 @@
-// const express = require("express");
-// const path = require("path");
-// const app = express();
-// const bodyParser = require("body-parser");
-// const bodyParserMidWare = bodyParser();
-// const port = 8080;
-// const host = "localhost";
+import express from "express";
+import path from "path";
 
-// app.use(
-//   bodyParser.urlencoded({
-//     extended: true,
-//   })
-// );
-// app.use(bodyParser.json());
+const app = express();
 
-// app.use(express.static(path.join(__dirname, "js")));
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, ".", "index.html"));
-// });
+import bodyParser from "express";
+import { fileURLToPath } from "url";
+const __filename = fileURLToPath(import.meta.url);
 
-// app.listen(port, host, () => {
-//   console.log(`Server Is Running On Port : ${port}`);
-// });
+const __dirname = path.dirname(__filename);
+
+const port = 8080;
+const host = "localhost";
+
+app.use(
+  bodyParser.urlencoded({
+    extended: false,
+  })
+);
+app.use(bodyParser.json());
+
+app.use(express.static("website"));
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, ".", "index.html"));
+});
+
+app.listen(port, host, () => {
+  console.log(`Server Is Running On Port : ${port}`);
+});

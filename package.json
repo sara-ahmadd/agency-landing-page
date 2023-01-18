@@ -2,11 +2,11 @@
   "name": "jquery-course",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon --watch main.js",
-    "start": "node server.js",
+    "dev": "nodemon --watch index.js",
+    "start": "node index.js",
     "watch-sass": "sass --watch sass/style.scss css/style.css"
   },
   "keywords": [],
