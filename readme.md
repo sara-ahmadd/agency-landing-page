@@ -35,7 +35,7 @@ npm run dev
 
 -The project is deployed to a live system.
 
--[Visit the project](https://agency-landing-page-sara-app.vercel.app/)
+-[Visit the project](https://agency-landing-page-sara-app.vercel.app)
 
 ## Technologies used to build the project
 
