@@ -1,0 +1,13 @@
+$backGround: rgb(245, 190, 118);
+$backGround-opacity-low: rgb(245, 190, 118, 0.5);
+$article-back: rgb(247, 225, 199);
+.article {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: $article-back;
+  margin: 0 auto;
+  height: 100vh;
+}

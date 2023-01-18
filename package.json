@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "nodemon --watch main.js",
     "start": "node server.js",
-    "watch-sass": "sass --watch style.scss style.css"
+    "watch-sass": "sass --watch sass/style.scss css/style.css"
   },
   "keywords": [],
   "author": "",

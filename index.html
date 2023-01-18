@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
@@ -39,20 +41,12 @@
         </ul>
       </nav>
     </header>
-    <main class="container">
-      <section id="home" class="container article">
+    <main class="my-container">
+      <section id="home" class="my-container article">
         <div class="home-content">
           <div class="video">
-            <video
-              autoplay
-              loop
-              muted
-              defaultMuted
-              playsinline
-              oncontextmenu="return false;"
-              preload
-            >
-              <source src="/video.mp4 " type="video/mp4" />
+            <video autoplay loop muted preload>
+              <source src="./assets/video.mp4 " type="video/mp4" />
             </video>
           </div>
           <div class="text-content">
@@ -71,7 +65,7 @@
           </div>
         </div>
       </section>
-      <section id="about" class="article container">
+      <section id="about" class="article my-container">
         <div class="about-text special-heading">
           <h2>About</h2>
           <p>
@@ -80,7 +74,7 @@
           </p>
         </div>
         <div class="about-container">
-          <div class="img"><img src="./images/mountain.jpg" alt="image" /></div>
+          <div class="img"><img src="./assets/mountain.jpg" alt="image" /></div>
           <div class="content">
             <nav>
               <ul class="tabs">
@@ -126,26 +120,80 @@
           </div>
         </div>
       </section>
-      <section id="portfolio" class="container article">
+      <section id="portfolio" class="my-container article">
         <div class="portfolio-head special-heading">
           <h2>Portfolio</h2>
         </div>
         <div class="projects">
-          <div><img src="./images/img1.jpg" /></div>
-          <div><img src="./images/img2.png" /></div>
-          <div><img src="./images/img3.png" /></div>
-          <div><img src="./images/img4.png" /></div>
-          <div><img src="./images/img5.png" /></div>
-          <div><img src="./images/img6.png" /></div>
+          <div class="project">
+            <div class="popover">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                nostrum.
+              </p>
+            </div>
+            <div class="img"><img src="./assets/img1.jpg" /></div>
+          </div>
+          <div class="project">
+            <div class="popover">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                nostrum.
+              </p>
+            </div>
+            <div class="img"><img src="./assets/img2.png" /></div>
+          </div>
+          <div class="project">
+            <div class="popover">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                nostrum.
+              </p>
+            </div>
+            <div class="img"><img src="./assets/img3.png" /></div>
+          </div>
+          <div class="project">
+            <div class="popover">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                nostrum.
+              </p>
+            </div>
+            <div class="img"><img src="./assets/img4.png" /></div>
+          </div>
+          <div class="project">
+            <div class="popover">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                nostrum.
+              </p>
+            </div>
+            <div class="img"><img src="./assets/img5.png" /></div>
+          </div>
+          <div class="project">
+            <div class="popover">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                nostrum.
+              </p>
+            </div>
+            <div class="img"><img src="./assets/img6.png" /></div>
+          </div>
         </div>
       </section>
-      <section id="reviews" class="container article">
+      <section id="reviews" class="my-container article">
         <div class="special-heading">
           <h2>Reviews</h2>
         </div>
         <div class="reviews-container">
           <div id="img">
-            <img src="/images/review1.jpg" alt="img" />
+            <img src="/assets/review1.jpg" alt="img" />
           </div>
           <p id="name">Peter Parker</p>
           <p id="title">WEB DEVELOPER</p>
@@ -156,17 +204,21 @@
           </div>
         </div>
         <div class="arrows">
-          <div id="arr-1"><i class="fa-solid fa-angle-left"></i></div>
-          <div id="arr-2"><i class="fa-solid fa-angle-right"></i></div>
+          <div class="arr" id="arr-1">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="arr" id="arr-2">
+            <i class="fa-solid fa-angle-right"></i>
+          </div>
         </div>
       </section>
-      <section id="contact" class="container article">
+      <section id="contact" class="my-container article">
         <div class="special-heading">
           <h2>Contact Us</h2>
         </div>
         <div class="contact-content">
           <div class="img">
-            <img src="./images/contact.png" />
+            <img src="./assets/contact.png" />
           </div>
           <form>
             <input type="text" placeholder="Your Name" />
@@ -176,7 +228,7 @@
         </div>
       </section>
     </main>
-    <footer class="container">
+    <footer class="my-container">
       <div class="left-section">
         <h2>Made By Sara</h2>
         <p>
@@ -201,8 +253,9 @@
       </div>
     </footer>
     <script src="./js/jquery-3.6.3.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/all.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <!-- <script src="./js/bootstrap.bundle.min.js.map"></script> -->
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>

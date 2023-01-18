@@ -33,7 +33,6 @@ tabs.forEach((tab) => {
   });
 });
 
-
 //Review Section
 //array of images.
 let images = ["img1", "img2", "img3", "img4"];
@@ -64,7 +63,7 @@ function getNext() {
   let imageChild = document.querySelector("#img img");
   imageChild.remove();
   let newImage = document.createElement("img");
-  newImage.setAttribute("src", `/images/review${num + 1}.jpg`);
+  newImage.setAttribute("src", `/assets/review${num + 1}.jpg`);
   newImage.style.cssText = ` width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -119,6 +118,12 @@ $(document).ready(function () {
       },
       50
     );
+  });
+  //portfolio
+  //project popover
+  $(".project").click(function () {
+    $(this).find(".popover").toggle();
+    $(this).siblings().find(".popover").hide();
   });
 });
 
