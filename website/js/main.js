@@ -63,7 +63,7 @@ function getNext() {
   let imageChild = document.querySelector("#img img");
   imageChild.remove();
   let newImage = document.createElement("img");
-  newImage.setAttribute("src", `/assets/review${num + 1}.jpg`);
+  newImage.setAttribute("src", `../website/assets/review${num + 1}.jpg`);
   newImage.style.cssText = ` width: 200px;
   height: 200px;
   border-radius: 50%;
